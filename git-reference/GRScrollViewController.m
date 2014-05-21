@@ -30,19 +30,34 @@ static NSString * const Reference = @"reference";
 {
     [super viewDidLoad];
     
+    NSInteger sideMargin = 10;
+    NSInteger topMargin = 20;
+    
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     scrollView.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height *1.5);
     [self.view addSubview:scrollView];
     
-    UILabel *gitCommands = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, self.view.frame.size.width, 20)];
-    gitCommands.text = @"Git Commands";
-    gitCommands.textColor = [UIColor blueColor];
+    UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(sideMargin, topMargin, self.view.frame.size.width, 20)];
+    title.text = @"Git Commands";
+    title.textColor = [UIColor blueColor];
+    [scrollView addSubview:title];
+   
     
-    for (NSInteger i = 0; i < 5 ; i++) {
+    for (NSInteger i = 0; i < [[self gitCommands] count]; i++) {
+        
+        topMargin += 30;
+        UILabel *gitCommand = [[UILabel alloc] initWithFrame:CGRectMake(sideMargin, topMargin, self.view.frame.size.width, 20)];
+        gitCommand.text = [self gitCommands][i][Command];
+        [scrollView addSubview:gitCommand];
+        
+        topMargin += 20;
+        UILabel *gitReference = [[UILabel alloc] initWithFrame:CGRectMake(sideMargin + 10, topMargin, self.view.frame.size.width, 20)];
+        gitReference.text = [self gitCommands][i][Reference];
+        [scrollView addSubview:gitReference];
         
     }
     
-    [scrollView addSubview:gitCommands];
+    
     
     
     // Do any additional setup after loading the view.
