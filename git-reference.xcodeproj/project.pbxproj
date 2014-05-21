@@ -19,6 +19,7 @@
 		1F5A9B4A192C372500963038 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5A9B32192C372400963038 /* UIKit.framework */; };
 		1F5A9B52192C372500963038 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F5A9B50192C372500963038 /* InfoPlist.strings */; };
 		1F5A9B54192C372500963038 /* git_referenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A9B53192C372500963038 /* git_referenceTests.m */; };
+		1F5A9B62192C593B00963038 /* GRScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A9B61192C593B00963038 /* GRScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		1F5A9B4F192C372500963038 /* git-referenceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "git-referenceTests-Info.plist"; sourceTree = "<group>"; };
 		1F5A9B51192C372500963038 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F5A9B53192C372500963038 /* git_referenceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = git_referenceTests.m; sourceTree = "<group>"; };
+		1F5A9B60192C593B00963038 /* GRScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRScrollViewController.h; sourceTree = "<group>"; };
+		1F5A9B61192C593B00963038 /* GRScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		1F5A9B34192C372400963038 /* git-reference */ = {
 			isa = PBXGroup;
 			children = (
+				1F5A9B60192C593B00963038 /* GRScrollViewController.h */,
+				1F5A9B61192C593B00963038 /* GRScrollViewController.m */,
 				1F5A9B3D192C372400963038 /* GRAppDelegate.h */,
 				1F5A9B3E192C372400963038 /* GRAppDelegate.m */,
 				1F5A9B40192C372400963038 /* Images.xcassets */,
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5A9B3B192C372400963038 /* main.m in Sources */,
+				1F5A9B62192C593B00963038 /* GRScrollViewController.m in Sources */,
 				1F5A9B3F192C372400963038 /* GRAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +444,7 @@
 				1F5A9B59192C372500963038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F5A9B5A192C372500963038 /* Build configuration list for PBXNativeTarget "git-referenceTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				1F5A9B5C192C372500963038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
